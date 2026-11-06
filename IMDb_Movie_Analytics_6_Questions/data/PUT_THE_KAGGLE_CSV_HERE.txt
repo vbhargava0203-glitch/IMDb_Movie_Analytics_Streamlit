@@ -1,0 +1,4 @@
+Drop the original CSV from
+https://www.kaggle.com/datasets/arjunsinghgangwar/top-250-movies-on-imdb-in-2026
+into this folder.
+You can also upload the CSV with the dashboard's sidebar file uploader.
