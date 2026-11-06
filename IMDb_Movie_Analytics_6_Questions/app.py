@@ -456,6 +456,44 @@ def render_sidebar(raw_df: pd.DataFrame | None, source: str) -> str:
         st.markdown("[Open original Kaggle dataset](" + KAGGLE_URL + ")")
         st.caption("Upload a CSV in the uploader above to override the Kaggle data.")
         st.caption("Streamlit Practical • Questions 1–6 • 50 Marks")
+        st.markdown(
+            """
+            <div class="student-footer">
+                <div class="student-name">V. BHARGAVA</div>
+                <div class="student-prn">PRN: 250200109</div>
+            </div>
+            <style>
+                [data-testid="stSidebar"] .student-footer {
+                    position: fixed;
+                    bottom: 12px;
+                    left: 12px;
+                    width: calc(21rem - 24px);
+                    max-width: calc(100vw - 24px);
+                    padding: 11px 14px;
+                    text-align: center;
+                    background: #263449;
+                    border-top: 2px solid #facc15;
+                    border-radius: 9px;
+                    box-shadow: 0 3px 14px #0005;
+                    z-index: 100;
+                }
+                [data-testid="stSidebar"] .student-name {
+                    color: white;
+                    font-weight: 800;
+                    font-size: 16px;
+                }
+                [data-testid="stSidebar"] .student-prn {
+                    color: #cbd5e1;
+                    font-size: 13px;
+                    margin-top: 3px;
+                }
+                [data-testid="stSidebar"] [data-testid="stSidebarUserContent"] {
+                    padding-bottom: 110px;
+                }
+            </style>
+            """,
+            unsafe_allow_html=True,
+        )
     return nav
 
 
